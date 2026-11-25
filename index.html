@@ -425,7 +425,7 @@
   <!-- МАГАЗИН -->
   <div id="shop-menu" class="menu-screen hidden">
     <h1>Магазин</h1>
-    <div id="coin-display">💰 <span id="shop-coins">10000</span></div>
+    <div id="coin-display">💰 <span id="shop-coins">0</span></div>
     
     <div class="shop-section-title">Аксессуары</div>
     <div class="shop-container" id="shop-accessories"></div>
@@ -658,7 +658,7 @@ function getProgress() {
     if (!p.equipped) p.equipped = "none";
     if (!p.owned_colors) p.owned_colors = ["pink"];
     if (!p.equipped_color) p.equipped_color = "pink";
-    if (p.coins === undefined) p.coins = 0;
+    if (p.coins === undefined) p.coins = 5000;
     if (!p.unlocked) p.unlocked = 1;
     if (!p.completed) p.completed = [];
     return p;
